@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main_activity_nav"
+    app:startDestination="@id/anaSayfaFragment">
+
+    <fragment
+        android:id="@+id/anaSayfaFragment"
+        android:name="com.ozansoykan.todoapphomework.ui.fragment.AnaSayfaFragment"
+        android:label="fragment_ana_sayfa"
+        tools:layout="@layout/fragment_ana_sayfa" >
+        <action
+            android:id="@+id/gecisDetay"
+            app:destination="@id/yapilacakIsDetayFragment" />
+        <action
+            android:id="@+id/gecisKayit"
+            app:destination="@id/yapilacakIsKayitFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/yapilacakIsDetayFragment"
+        android:name="com.ozansoykan.todoapphomework.ui.fragment.YapilacakIsDetayFragment"
+        android:label="fragment_yapilacak_is_detay"
+        tools:layout="@layout/fragment_yapilacak_is_detay" />
+    <fragment
+        android:id="@+id/yapilacakIsKayitFragment"
+        android:name="com.ozansoykan.todoapphomework.ui.fragment.YapilacakIsKayitFragment"
+        android:label="fragment_yapilacak_is_kayit"
+        tools:layout="@layout/fragment_yapilacak_is_kayit" />
+</navigation>
